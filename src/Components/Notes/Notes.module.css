@@ -1,0 +1,136 @@
+body {
+    background-color: #dae5f5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .NotesName {
+    color: white;
+    font-size: 1.29188rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.02581rem;
+    position: relative;
+    left: 15px;
+    margin-left: 10px;
+  }
+  
+  .NotesGroup {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    position: relative;
+    background-color: #fff;
+  }
+  .NotesGroupHeading {
+    background: #001f8b;
+    width: 77vw;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+  }
+  
+  .NotesContent {
+    border-radius: 0rem 0rem 0rem 0.9375rem;
+    background: #dae5f5;
+    width: 68vw;
+    height: 63vh;
+    overflow-y: scroll;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: fixed;
+    top: 77px;
+    overflow-y: auto;
+  }
+  
+  .NotesEnter {
+    background-color: #001f8b;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 78vw;
+  }
+  
+  .NotesInput {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03725rem;
+    margin-left: -25px;
+    width: 90%;
+    height: 70%;
+    padding-left: 3%;
+    padding-top: 2%;
+    resize: none; 
+  }
+  
+  .NotesInput::placeholder {
+    color: #9a9a9a;
+    opacity: 1;
+    font-size: 1.3rem;
+    margin-left: 5%;
+  }
+  
+  .NotesInputButton {
+    background-color: transparent;
+    border: 0px solid transparent;
+    position: absolute;
+    right: 7%;
+    bottom: 20%;
+    transition: fill 0.3s ease;
+  }
+  
+  .active {
+    filter: none;
+  }
+  
+  .inactive {
+    filter: none;
+  }
+  
+  .timeDate {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #353535;
+    text-align: right;
+    margin-right: 5%;
+    font-weight: bold;
+  }
+  
+  .notes {
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.188%;
+    letter-spacing: 0.03938rem;
+    padding: 10px;
+    
+  }
+  .backButton {
+    display: none; 
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .NotesGroupHeading,
+    .NotesContent,
+    .NotesEnter {
+      width: 100vw; 
+    }
+    .backButton {
+      display: inline-block; 
+    }
+  }

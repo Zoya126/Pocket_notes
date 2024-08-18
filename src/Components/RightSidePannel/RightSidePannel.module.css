@@ -1,0 +1,66 @@
+
+.rightSidePannel{
+    background: #DAE5F5;
+    width: 77vw;
+    height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .rightSidePannel{
+        display: none;
+    }
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imageText1{
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+    padding: 0%;
+}
+
+.imageText2{
+    color: #292929;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; 
+    letter-spacing: 0.0275rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+    margin-top: -5%;
+}
+
+.endToEnd{
+    color: #292929;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; 
+    letter-spacing: 0.0275rem; 
+    position: absolute;
+    bottom: 3%;
+
+}
+.endToEnd img{
+    margin-bottom: -1%;
+}
