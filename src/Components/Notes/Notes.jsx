@@ -19,7 +19,7 @@ const Notes = ({ userIdClicked }) => {
   const color = storedData[userIdClicked ]?.color || "#000";
 
   const words = groupName.split(" ");
-  const avatarText = words.length > 1 ? (words?.[0]?.[0] || "") + words[1][0] : words[0][0] || "";
+  const avatarText = words.length > 1 ? (words?.[0]?.[0] || "") + (words?.[1]?.[0] || "") : (words?.[0]?.[0] || "N/A");
 
   const NotesImage = {
     backgroundColor: `${color}`,

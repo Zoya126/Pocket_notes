@@ -194,43 +194,43 @@ const handleUserIdClicked = IDnum => {
         <label htmlFor="Choosecolour">
           <span className={StyleHomeMainPage.Text2}>Choose colour</span>
           <span className="StyleHomeMainPage.ChoosecolourBreak">
-            &nbsp;&nbsp;
-            <button
-              type="button"
-              className={StyleHomeMainPage.colorButton1}
-              onClick={funColor1}
-            ></button>
-            &nbsp;&nbsp;
-            <button
-              type="button"
-              className={StyleHomeMainPage.colorButton2}
-              onClick={funColor2}
-            ></button>
-            &nbsp;&nbsp;
-            <button
-              type="button"
-              className={StyleHomeMainPage.colorButton3}
-              onClick={funColor3}
-            ></button>
-            &nbsp;&nbsp;
-            <button
-              type="button"
-              className={StyleHomeMainPage.colorButton4}
-              onClick={funColor4}
-            ></button>
-            &nbsp;&nbsp;
-            <button
-              type="button"
-              className={StyleHomeMainPage.colorButton5}
-              onClick={funColor5}
-            ></button>
-            &nbsp;&nbsp;
-            <button
-              type="button"
-              className={StyleHomeMainPage.colorButton6}
-              onClick={funColor6}
-            ></button>
-            &nbsp;&nbsp;
+          &nbsp;&nbsp;
+              <button
+                type="button"
+                className={`${StyleHomeMainPage.colorButton1} ${createGroup.color === "#B38BFA" ? StyleHomeMainPage.colorButtonSelected : ""}`}
+                onClick={funColor1}
+              ></button>
+              &nbsp;&nbsp;
+              <button
+                type="button"
+                className={`${StyleHomeMainPage.colorButton2} ${createGroup.color === "#FF79F2" ? StyleHomeMainPage.colorButtonSelected : ""}`}
+                onClick={funColor2}
+              ></button>
+              &nbsp;&nbsp;
+              <button
+                type="button"
+                className={`${StyleHomeMainPage.colorButton3} ${createGroup.color === "#43E6FC" ? StyleHomeMainPage.colorButtonSelected : ""}`}
+                onClick={funColor3}
+              ></button>
+              &nbsp;&nbsp;
+              <button
+                type="button"
+                className={`${StyleHomeMainPage.colorButton4} ${createGroup.color === "#F19576" ? StyleHomeMainPage.colorButtonSelected : ""}`}
+                onClick={funColor4}
+              ></button>
+              &nbsp;&nbsp;
+              <button
+                type="button"
+                className={`${StyleHomeMainPage.colorButton5} ${createGroup.color === "#0047FF" ? StyleHomeMainPage.colorButtonSelected : ""}`}
+                onClick={funColor5}
+              ></button>
+              &nbsp;&nbsp;
+              <button
+                type="button"
+                className={`${StyleHomeMainPage.colorButton6} ${createGroup.color === "#6691FF" ? StyleHomeMainPage.colorButtonSelected : ""}`}
+                onClick={funColor6}
+              ></button>
+              &nbsp;&nbsp;
           </span>
         </label>
       </p>

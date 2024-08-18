@@ -75,6 +75,10 @@
   background-color: #6691ff;
   border: 0px solid #b48bfa00;
 }
+.colorButtonSelected {
+  border: 2px solid black;
+ 
+}
 
 .colorButton6:active, .colorButton5:active, .colorButton4:active, .colorButton3:active, .colorButton2:active, .colorButton1:active {
     border: none;
