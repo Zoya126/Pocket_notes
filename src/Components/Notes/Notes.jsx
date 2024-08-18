@@ -16,8 +16,8 @@ const Notes = ({ userIdClicked }) => {
     date: [],
   });
 
-  const groupName = storedData[userIdClicked ]?.groupName || "";
-  const color = storedData[userIdClicked ]?.color || "#000";
+  const groupName = storedData[userIdClicked -1]?.groupName || "";
+  const color = storedData[userIdClicked -1]?.color || "#000";
 
   const words = groupName.split(" ");
   const avatarText =words.length > 1 ? (words?.[0]?.[0] || "") + words[1][0] : words[0][0] || "";
