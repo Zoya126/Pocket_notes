@@ -8,6 +8,7 @@ const Notes = ({ userIdClicked }) => {
   const [saveNotes, setSaveNotes] = useState(false);
   const storedDataString = localStorage.getItem("groupNamesData");
   const storedData = JSON.parse(storedDataString) || [];
+  console.log("Stored Data:", storedData);
   const [myNotes, setMyNotes] = useState({
     id: [],
     notes: "",
@@ -19,7 +20,10 @@ const Notes = ({ userIdClicked }) => {
   const color = storedData[userIdClicked ]?.color || "#000";
 
   const words = groupName.split(" ");
-  const avatarText = words.length > 1 ? (words?.[0]?.[0] || "") + (words?.[1]?.[0] || "") : (words?.[0]?.[0] || "N/A");
+  const avatarText = Array.isArray(words) && words.length > 0 
+    ? (words[0]?.[0] || "") + (words[1]?.[0] || "") 
+    : "";
+
 
   const NotesImage = {
     backgroundColor: `${color}`,
@@ -78,6 +82,7 @@ const Notes = ({ userIdClicked }) => {
     if (myNotes.notes !== "" && saveNotes === true) {
       existingNotes.push(myNotes);
       localStorage.setItem("myNotesSave", JSON.stringify(existingNotes));
+      console.log("Saved Notes:", existingNotes);
     }
     resetTextarea();
   };
