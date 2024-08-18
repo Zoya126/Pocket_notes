@@ -19,14 +19,12 @@
 @media (max-width: 600px) {
   .hideWhenMobile {
     display: none;
-    overflow: hidden;
   }
 }
 
 @media (min-width: 600px) {
   .hideWhenPc{
     display: none;
-    overflow: hidden;
   }
 }
 
@@ -79,7 +77,7 @@
 }
 .colorButtonSelected {
   border: 2px solid black;
- 
+  /* You can add more styles if needed */
 }
 
 .colorButton6:active, .colorButton5:active, .colorButton4:active, .colorButton3:active, .colorButton2:active, .colorButton1:active {
