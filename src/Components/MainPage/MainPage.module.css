@@ -19,12 +19,14 @@
 @media (max-width: 600px) {
   .hideWhenMobile {
     display: none;
+    overflow: hidden;
   }
 }
 
 @media (min-width: 600px) {
   .hideWhenPc{
     display: none;
+    overflow: hidden;
   }
 }
 
